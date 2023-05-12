@@ -1,29 +1,20 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import cn from "classnames";
 
 import { useScrollDirection } from "@/hooks/useScrollDirection";
-import Button from "@/components/Button";
+
+const Button = dynamic(() => import("@/components/Button"), { ssr: false });
 
 const links = [
-  {
-    label: "About",
-    url: "#about",
-  },
-  {
-    label: "Experience",
-    url: "#experience",
-  },
-  {
-    label: "Projects",
-    url: "#projects",
-  },
-  {
-    label: "Contact",
-    url: "#contact",
-  },
+  { label: "About", url: "#about" },
+  { label: "Experience", url: "#experience" },
+  { label: "Projects", url: "#projects" },
+  { label: "Contact", url: "#contact" },
 ];
 
 interface HeaderProps {
@@ -34,17 +25,11 @@ interface HeaderProps {
 const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
   const [page, setPage] = useState("");
   const scrollDirection = useScrollDirection();
-
   const headerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClick = () => setPage("");
-    const handleHashChange = () => {
-      const hash = window.location.hash;
-      if (hash) {
-        setPage(hash);
-      }
-    };
+    const handleHashChange = () => setPage(window.location.hash);
 
     document.addEventListener("click", handleClick);
     window.addEventListener("hashchange", handleHashChange);
@@ -61,13 +46,13 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
 
   return (
     <header
-      className={cn("sticky bg-base text-text py-6 px-6 lg:px-0 transition-all duration-500", {
+      className={cn("sticky bg-base text-text py-6 transition-all duration-500 z-20", {
         "-top-24": scrollDirection === "down",
         "shadow-header top-0": scrollDirection === "up",
         "shadow-none": scrollDirection === null,
       })}
     >
-      <div className="container lg:px-0 mx-auto flex justify-between items-center">
+      <div className="container flex justify-between items-center">
         <Link
           href="/"
           className="font-bold text-2xl bg-lavender text-dark w-10 h-10 flex items-center justify-center hover:bg-mauve transition z-20 "
@@ -77,16 +62,16 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
 
         <nav className="flex space-x-8 items-center" ref={headerRef}>
           <ul className="space-x-6 hidden md:flex">
-            {links.map((link, idx) => (
-              <li key={link.label}>
+            {links.map(({ label, url }, idx) => (
+              <li key={label}>
                 <a
-                  href={link.url}
-                  className={cn("hover:text-lavender transition-colors duration-200", {
-                    "text-lavender": page === link.url,
+                  href={url}
+                  className={cn("transition-colors duration-200 hover:text-lavender ", {
+                    "text-lavender": page === url,
                   })}
                 >
                   <span className="text-lavender">0{idx}.</span>
-                  <span className="ml-1">{link.label}</span>
+                  <span className="ml-1">{label}</span>
                 </a>
               </li>
             ))}
@@ -96,7 +81,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
             Resume
           </Button>
 
-          <div className="block md:hidden" id="side-menu">
+          <div className="block md:hidden">
             <button
               className="text-lavender hover:text-dark transition-colors duration-200 z-30 flex justify-center items-center"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -153,13 +138,16 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
           </div>
         </nav>
       </div>
-      <div
-        className={cn(
-          "fixed top-0 bottom-0 left-0 right-0 bg-base transition-opacity duration-300 opacity-0",
-          { "opacity-70 z-10": isMenuOpen, "-z-10": !isMenuOpen },
-        )}
-        onClick={() => setIsMenuOpen(false)}
-      />
+      {createPortal(
+        <div
+          className={cn(
+            "fixed top-0 bottom-0 left-0 right-0 bg-base transition-opacity duration-300 opacity-0",
+            { "opacity-70 z-10": isMenuOpen, "-z-10": !isMenuOpen },
+          )}
+          onClick={() => setIsMenuOpen(false)}
+        />,
+        document.body,
+      )}
     </header>
   );
 };
