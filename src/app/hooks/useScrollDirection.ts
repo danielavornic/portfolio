@@ -14,7 +14,7 @@ export const useScrollDirection = (): ScrollDirection => {
 
       if (scrollY == 0) {
         setScrollDirection(null);
-      } else if (direction !== scrollDirection && Math.abs(scrollY - lastScrollY) > 5) {
+      } else if (direction !== scrollDirection && Math.abs(scrollY - lastScrollY) > 3) {
         setScrollDirection(direction);
       }
 
