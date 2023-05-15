@@ -8,7 +8,7 @@ import cn from "classnames";
 
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 
-const Button = dynamic(() => import("@/components/Button"), { ssr: false });
+const Button = dynamic(() => import("@/components/common/Button"), { ssr: false });
 
 const links = [
   { label: "About", url: "#about" },
@@ -46,13 +46,13 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
 
   return (
     <header
-      className={cn("sticky bg-base text-text py-6 transition-all duration-500 z-20", {
+      className={cn("sticky w-full bg-base text-text py-6 transition-all duration-500 z-20", {
         "-top-24": scrollDirection === "down",
         "shadow-header top-0": scrollDirection === "up",
         "shadow-none": scrollDirection === null,
       })}
     >
-      <div className="container flex justify-between items-center">
+      <div className="px-6 sm:px-10 lg:px-12 flex justify-between items-center">
         <Link
           href="/"
           className="font-bold text-2xl bg-lavender text-dark w-10 h-10 flex items-center justify-center hover:bg-mauve transition z-20 "

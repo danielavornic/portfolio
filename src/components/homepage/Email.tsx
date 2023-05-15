@@ -1,5 +1,5 @@
 const Email = () => (
-  <aside className="fixed bottom-0 right-4 md:right-5 xl:right-10 hidden sm:flex flex-col justify-center items-center">
+  <aside className="fixed bottom-0 right-6 sm:right-10 lg:right-12 hidden sm:flex flex-col justify-center items-center">
     <a
       href="mailto:daniela.vornic@gmail.com"
       target="_blank"

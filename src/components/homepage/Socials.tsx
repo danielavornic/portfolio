@@ -14,7 +14,7 @@ const socials = [
 ];
 
 const Socials = () => (
-  <aside className="fixed bottom-0 left-4 md:left-5 xl:left-10 hidden sm:flex flex-col justify-center items-center">
+  <aside className="fixed bottom-0 left-6 sm:left-10 lg:left-12 hidden sm:flex flex-col justify-center items-center">
     <ul className="flex flex-col items-center justify-center space-y-6">
       {socials.map(({ name, icon, url }, index) => (
         <li
