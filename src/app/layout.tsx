@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 import { Inter, Roboto_Mono } from "next/font/google";
 import cn from "classnames";
 
