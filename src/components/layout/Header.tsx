@@ -4,6 +4,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { Link as ScrollLink } from "react-scroll";
 import cn from "classnames";
 
 import { useScrollDirection } from "@/hooks/useScrollDirection";
@@ -11,10 +12,10 @@ import { useScrollDirection } from "@/hooks/useScrollDirection";
 const Button = dynamic(() => import("@/components/common/Button"), { ssr: false });
 
 const links = [
-  { label: "About", url: "#about" },
-  { label: "Experience", url: "#experience" },
-  { label: "Projects", url: "#projects" },
-  { label: "Contact", url: "#contact" },
+  { label: "About", sectionName: "about" },
+  { label: "Experience", sectionName: "experience" },
+  { label: "Projects", sectionName: "projects" },
+  { label: "Contact", sectionName: "contact" },
 ];
 
 interface HeaderProps {
@@ -62,17 +63,20 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
 
         <nav className="flex space-x-8 items-center" ref={headerRef}>
           <ul className="space-x-6 hidden md:flex">
-            {links.map(({ label, url }, idx) => (
+            {links.map(({ label, sectionName }, idx) => (
               <li key={label}>
-                <a
-                  href={url}
-                  className={cn("transition-colors duration-200 hover:text-lavender ", {
-                    "text-lavender": page === url,
-                  })}
+                <ScrollLink
+                  to={sectionName}
+                  activeClass="text-lavender"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className="transition-colors duration-200 cursor-default hover:text-lavender "
                 >
                   <span className="text-lavender">0{idx}.</span>
                   <span className="ml-1">{label}</span>
-                </a>
+                </ScrollLink>
               </li>
             ))}
           </ul>
@@ -116,17 +120,21 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
             >
               <nav className="w-full flex justify-between flex-col items-center">
                 <ul className="space-y-6 text-center">
-                  {links.map((link, idx) => (
-                    <li key={link.label}>
-                      <a
-                        href={link.url}
-                        className={cn("hover:text-lavender transition-colors duration-200", {
-                          "text-lavender": page === link.url,
-                        })}
+                  {links.map(({ label, sectionName }, idx) => (
+                    <li key={label}>
+                      <ScrollLink
+                        to={sectionName}
+                        activeClass="text-lavender"
+                        spy={true}
+                        smooth={true}
+                        offset={-50}
+                        duration={500}
+                        className="transition-colors duration-200 cursor-default hover:text-lavender"
+                        onClick={() => setIsMenuOpen(false)}
                       >
                         <div className="text-lavender">0{idx}.</div>
-                        <span className="ml-1">{link.label}</span>
-                      </a>
+                        <span className="ml-1">{label}</span>
+                      </ScrollLink>
                     </li>
                   ))}
                 </ul>
