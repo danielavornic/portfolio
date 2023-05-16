@@ -7,6 +7,7 @@ const Header = dynamic(() => import("@/components/layout/Header"), { ssr: false 
 const Socials = dynamic(() => import("@/components/homepage/Socials"), { ssr: false });
 const Email = dynamic(() => import("@/components/homepage/Email"), { ssr: false });
 const Hero = dynamic(() => import("@/components/homepage/Hero"), { ssr: false });
+const About = dynamic(() => import("@/components/homepage/About"), { ssr: false });
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,9 +17,10 @@ export default function Home() {
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <Socials />
       <Email />
-      <main className="container sm:px-12 lg:px-24 text-lavender min-h-screen">
+      <main className="container sm:px-24 md:px-28 lg:px-32 text-lavender min-h-screen">
         <Hero />
-        <div className="h-96 bg-subtext0" />
+        <About />
+        <div className="h-96 bg-dark" />
       </main>
     </>
   );
