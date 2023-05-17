@@ -5,7 +5,7 @@ const Email = () => (
       target="_blank"
       rel="noreferrer"
       aria-label="Email"
-      className="text-sm text-subtext0 hover:text-lavender hover:-translate-y-1 focus:text-mauve transition"
+      className="text-sm font-mono text-subtext0 hover:text-lavender hover:-translate-y-1 focus:text-mauve transition"
       style={{ writingMode: "vertical-lr" }}
     >
       daniela.vornic@gmail.com

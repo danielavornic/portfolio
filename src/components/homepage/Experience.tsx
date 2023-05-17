@@ -57,7 +57,7 @@ const Experience = () => {
             <button
               key={employer}
               className={cn(
-                "px-4 py-2 font-semibold lg:inline-block lg:text-left hover:text-lavender hover:bg-[#222234] transition mb-0.5 lg:mb-0 border-b lg:border-l lg:border-b-0 min-w-[120px] lg:min-w-full",
+                "px-4 py-2 font-mono lg:inline-block lg:text-left hover:text-lavender hover:bg-[#222234] transition mb-0.5 lg:mb-0 border-b lg:border-l lg:border-b-0 min-w-[120px] lg:min-w-full",
                 {
                   "text-lavender border-lavender bg-[#222234]": activeTab === index,
                   "text-subtext0 border-subtext0 bg-transparent": activeTab !== index,
@@ -81,7 +81,7 @@ const Experience = () => {
                 @ {employer}
               </a>
             </h4>
-            <p className="text-subtext0 mb-6 text-sm">{dates}</p>
+            <p className="text-subtext0 font-mono mb-6 text-sm">{dates}</p>
             <ul className="list-disc marker:text-lavender list-outside">
               {details.map((detail, index) => (
                 <li key={index} className="text-subtext0 mb-2">

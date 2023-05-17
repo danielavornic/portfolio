@@ -6,6 +6,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+      mono: ["Source Code Pro", "monospace"],
+    },
     container: {
       padding: {
         DEFAULT: "1rem",

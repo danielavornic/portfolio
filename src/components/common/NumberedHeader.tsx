@@ -11,7 +11,7 @@ const NumberedHeader = ({ heading, number, className, ...props }: NumberedHeader
   return (
     <div className={cn("flex items-center w-full space-x-6 mb-10", className)} {...props}>
       <div className="flex items-baseline space-x-2">
-        <span className="text-lavender text-lg sm:text-xl md:text-2xl font-bold">
+        <span className="text-lavender text-lg sm:text-xl md:text-2xl font-mono font-bold">
           {formattedNumber}.
         </span>
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-text">{heading}</h2>

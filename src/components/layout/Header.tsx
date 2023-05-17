@@ -32,11 +32,14 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
 
   return (
     <header
-      className={cn("sticky w-full bg-base text-text py-6 transition-all duration-500 z-20", {
-        "-top-24": scrollDirection === "down",
-        "shadow-header top-0": scrollDirection === "up",
-        "shadow-none": scrollDirection === null,
-      })}
+      className={cn(
+        "sticky w-full bg-base text-text font-mono py-6 transition-all duration-500 z-20",
+        {
+          "-top-24": scrollDirection === "down",
+          "shadow-header top-0": scrollDirection === "up",
+          "shadow-none": scrollDirection === null,
+        },
+      )}
     >
       <div className="px-6 sm:px-10 lg:px-12 flex justify-between items-center">
         <Link
@@ -57,7 +60,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
                   smooth={true}
                   offset={-50}
                   duration={500}
-                  className="transition-colors duration-200 cursor-default hover:text-lavender "
+                  className="transition-colors duration-200 cursor-default hover:text-lavender"
                 >
                   <span className="text-lavender">0{idx}.</span>
                   <span className="ml-1">{label}</span>

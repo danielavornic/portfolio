@@ -1,9 +1,16 @@
 import "./globals.scss";
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Inter, Source_Code_Pro } from "next/font/google";
 import cn from "classnames";
 
-const inter = Inter({ subsets: ["latin"] });
-const robotoMono = Roboto_Mono({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const source_code_pro = Source_Code_Pro({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Daniela Vornic | Frontend Developer",
@@ -14,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={cn(robotoMono.className, "mocha bg-base")}>{children}</body>
+      <body className={cn(inter.className, "mocha bg-base")}>{children}</body>
     </html>
   );
 }
