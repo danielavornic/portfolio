@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import { createPortal } from "react-dom";
 import { Link as ScrollLink } from "react-scroll";
 import cn from "classnames";
@@ -24,22 +24,7 @@ interface HeaderProps {
 }
 
 const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
-  const [page, setPage] = useState("");
   const scrollDirection = useScrollDirection();
-  const headerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClick = () => setPage("");
-    const handleHashChange = () => setPage(window.location.hash);
-
-    document.addEventListener("click", handleClick);
-    window.addEventListener("hashchange", handleHashChange);
-
-    return () => {
-      document.removeEventListener("click", handleClick);
-      window.removeEventListener("hashchange", handleHashChange);
-    };
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "auto";
@@ -61,7 +46,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
           DV
         </Link>
 
-        <nav className="flex space-x-8 items-center" ref={headerRef}>
+        <nav className="flex space-x-8 items-center">
           <ul className="space-x-6 hidden md:flex">
             {links.map(({ label, sectionName }, idx) => (
               <li key={label}>
