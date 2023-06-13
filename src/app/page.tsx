@@ -18,7 +18,7 @@ export default function Home() {
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <Socials />
       <Email />
-      <main className="container sm:px-24 md:px-28 lg:px-32 text-lavender min-h-screen">
+      <main className="container sm:px-24 md:px-28 lg:px-32 xl:px-48 2xl:px-52 text-lavender min-h-screen">
         <Hero />
         <About />
         <Experience />
