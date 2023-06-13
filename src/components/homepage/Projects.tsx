@@ -1,8 +1,7 @@
 import dynamic from "next/dynamic";
 
 const NumberedHeader = dynamic(() => import("@/components/common/NumberedHeader"));
-const FeaturedProject = dynamic(() => import("./FeaturedProject"));
-const Button = dynamic(() => import("@/components/common/Button"));
+const FeaturedProject = dynamic(() => import("@/components/homepage/FeaturedProject"));
 
 const projects = [
   {
@@ -42,16 +41,6 @@ const Projects = () => {
           <FeaturedProject key={index} project={project} dir={index % 2 ? "right" : "left"} />
         ))}
       </div>
-
-      <Button
-        as="a"
-        href="https://github.com/danielavornic"
-        target="_blank"
-        className="mt-10 mx-auto md:mt-14 xl:mt-20 w-fit block"
-        aria-label="View more on GitHub"
-      >
-        View more on GitHub
-      </Button>
     </section>
   );
 };
