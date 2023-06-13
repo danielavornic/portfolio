@@ -9,6 +9,7 @@ const Email = dynamic(() => import("@/components/homepage/Email"), { ssr: false 
 const Hero = dynamic(() => import("@/components/homepage/Hero"), { ssr: false });
 const About = dynamic(() => import("@/components/homepage/About"), { ssr: false });
 const Experience = dynamic(() => import("@/components/homepage/Experience"), { ssr: false });
+const Projects = dynamic(() => import("@/components/homepage/Projects"), { ssr: false });
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <About />
         <Experience />
+        <Projects />
         <div className="h-96 bg-dark" />
       </main>
     </>

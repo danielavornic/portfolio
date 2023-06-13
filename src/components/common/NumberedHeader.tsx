@@ -16,7 +16,7 @@ const NumberedHeader = ({ heading, number, className, ...props }: NumberedHeader
         </span>
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-text">{heading}</h2>
       </div>
-      <div className="h-[1px] w-full flex-1 md:w-[240px] md:flex-initial lg:w-[320px] bg-subtext0" />
+      <div className="h-[1px] w-full flex-1 md:w-[240px] md:flex-initial lg:w-[320px] bg-subtext0 bg-opacity-40" />
     </div>
   );
 };

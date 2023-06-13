@@ -55,3 +55,26 @@
     }
   }
 }
+
+.featured-project-image {
+  @media (min-width: 1024px) {
+    &::after {
+      background-color: rgb(var(--ctp-lavender));
+      width: 100%;
+      height: 100%;
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      opacity: 0.4;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+        background-color: transparent;
+      }
+    }
+  }
+}
