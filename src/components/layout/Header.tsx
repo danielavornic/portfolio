@@ -44,7 +44,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
       <div className="px-6 sm:px-10 lg:px-12 flex justify-between items-center">
         <Link
           href="/"
-          className="font-bold text-2xl bg-lavender border border-lavender text-dark w-10 h-10 flex items-center justify-center hover:bg-transparent hover:text-lavender transition z-20 "
+          className="font-bold text-2xl bg-lavender border border-lavender text-dark w-10 h-10 flex items-center justify-center hover:bg-transparent hover:text-lavender transition z-20"
         >
           DV
         </Link>
@@ -69,7 +69,13 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
             ))}
           </ul>
 
-          <Button size="sm" as="a" href="#" target="_blank" className="hidden md:flex">
+          <Button
+            size="sm"
+            as="a"
+            href="/Daniela_Vornic_Resume.pdf"
+            target="_blank"
+            className="hidden md:flex"
+          >
             Resume
           </Button>
 
@@ -126,7 +132,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
                     </li>
                   ))}
                 </ul>
-                <Button className="mt-10" as="a" href="#" target="_blank">
+                <Button className="mt-10" as="a" href="/Daniela_Vornic_Resume.pdf" target="_blank">
                   Resume
                 </Button>
               </nav>
