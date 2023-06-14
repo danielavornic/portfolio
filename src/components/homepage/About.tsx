@@ -28,7 +28,7 @@ const About = () => {
         <div>
           <div className="about-img-wrapper mt-4 relative transition w-[250px] h-[250px] sm:w-[300px] sm:h-[300px]">
             <Image
-              src="https://placekitten.com/g/500/500"
+              src="/images/profile.png"
               alt="Daniela Vornic"
               className="rounded-lg -translate-y-4 transition duration-300"
               fill
