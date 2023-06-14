@@ -19,7 +19,7 @@ const Socials = () => (
       {socials.map(({ name, icon, url }, index) => (
         <li
           key={index}
-          className="text-2xl text-subtext0 hover:text-lavender hover:-translate-y-1 focus:text-mauve transition"
+          className="text-2xl text-subtext0 hover:text-lavender hover:-translate-y-1 transition"
         >
           <a href={url} target="_blank" rel="noreferrer" aria-label={name} className="block">
             {icon}

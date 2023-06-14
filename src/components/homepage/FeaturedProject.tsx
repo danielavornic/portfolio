@@ -69,7 +69,7 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-lavender focus:text-mauve transition"
+              className="hover:text-lavender transition"
             >
               <FiGithub className="text-xl" />
             </a>
@@ -77,7 +77,7 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-lavender focus:text-mauve transition"
+              className="hover:text-lavender transition"
             >
               <FiExternalLink className="text-xl" />
             </a>
