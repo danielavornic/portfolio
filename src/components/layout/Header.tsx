@@ -55,6 +55,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
               <li key={label}>
                 <ScrollLink
                   to={sectionName}
+                  href={`#${sectionName}`}
                   activeClass="text-lavender"
                   spy={true}
                   smooth={true}
@@ -83,6 +84,8 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
             <button
               className="text-lavender hover:text-dark transition-colors duration-200 z-30 flex justify-center items-center"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Open menu"
+              tabIndex={0}
             >
               <div className="z-30 relative flex flex-col">
                 <span
@@ -118,6 +121,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
                     <li key={label}>
                       <ScrollLink
                         to={sectionName}
+                        href={`#${sectionName}`}
                         activeClass="text-lavender"
                         spy={true}
                         smooth={true}

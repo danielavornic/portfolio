@@ -30,6 +30,7 @@ const Button = ({
     return (
       <Link
         to={href || ""}
+        href={`#${href}`}
         activeClass="text-lavender"
         spy={true}
         smooth={true}

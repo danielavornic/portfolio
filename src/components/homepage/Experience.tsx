@@ -77,7 +77,7 @@ const Experience = () => {
         </div>
         <div>
           <div className="px-6 py-4 md:py-8 lg:px-0 lg:py-0">
-            <h4 className="text-lg sm:text-xl font-semibold mb-2 space-x-2">
+            <h3 className="text-lg sm:text-xl font-semibold mb-2 space-x-2">
               <span className="text-text">{title}</span>
               <a
                 className="text-lavender hover:underline hover:underline-offset-3 transition"
@@ -86,7 +86,7 @@ const Experience = () => {
               >
                 @ {employer}
               </a>
-            </h4>
+            </h3>
             <p className="text-subtext0 font-mono mb-6 text-sm">{dates}</p>
             <ul className="list-disc marker:text-lavender list-outside">
               {details.map((detail, index) => (

@@ -7,7 +7,7 @@ const inter = Inter({
   display: "swap",
 });
 
-export const source_code_pro = Source_Code_Pro({
+const source_code_pro = Source_Code_Pro({
   subsets: ["latin"],
   display: "swap",
 });
