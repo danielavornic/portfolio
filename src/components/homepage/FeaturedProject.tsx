@@ -20,9 +20,13 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
 
   return (
     <div
-      className={cn("relative h-96 flex shadow-menu justify-between lg:shadow-none", className, {
-        "lg:justify-end": dir === "right",
-      })}
+      className={cn(
+        "relative h-96 flex shadow-menu justify-between lg:shadow-none group",
+        className,
+        {
+          "lg:justify-end": dir === "right",
+        },
+      )}
       {...props}
     >
       <div
@@ -43,7 +47,7 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
             className="hover:text-lavender transition"
             aria-label={title}
           >
-            <h3 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-10 inline-block">{title}</h3>
+            <h3 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-10 lg:inline-block">{title}</h3>
           </a>
           <p className="mb-10 lg:p-4 xl:p-6 lg:bg-[#28283e] lg:shadow-sm lg:hover:shadow-lg transition">
             {description}
@@ -87,14 +91,18 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
           </div>
         </div>
       </div>
-      <div className="absolute top-0 h-96 w-full z-0 lg:block lg:relative lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl">
-        <a href={link} target="_blank" rel="noopener noreferrer" aria-label={title}>
-          <div
-            className="bg-cover bg-center bg-no-repeat h-96 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl opacity-25 lg:opacity-100 featured-project-image transition"
-            style={{ backgroundImage: `url(${image})` }}
-          />
-        </a>
-      </div>
+      <a
+        href={"link"}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={title}
+        className="cursor-pointer shadow-md lg:shadow-none group-hover:shadow-lg lg:hover:shadow-none absolute top-0 h-96 w-full z-0 lg:block lg:relative lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+      >
+        <div
+          className="bg-cover bg-center bg-no-repeat h-96 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl opacity-25 lg:opacity-100 featured-project-image transition"
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      </a>
     </div>
   );
 };
