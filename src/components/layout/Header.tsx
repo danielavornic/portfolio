@@ -44,7 +44,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
       <div className="px-6 sm:px-10 lg:px-12 flex justify-between items-center">
         <Link
           href="/"
-          className="font-bold text-2xl bg-lavender text-dark w-10 h-10 flex items-center justify-center hover:bg-mauve transition z-20 "
+          className="font-bold text-2xl bg-lavender border border-lavender text-dark w-10 h-10 flex items-center justify-center hover:bg-transparent hover:text-lavender transition z-20 "
         >
           DV
         </Link>
