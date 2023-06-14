@@ -12,8 +12,9 @@ const Contact = () => {
       <h2 className="font-bold text-text text-2xl sm:text-3xl md:text-4xl">Get In Touch</h2>
 
       <p className="my-10 text-subtext0">
-        I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have
-        a question or just want to say hi, I&apos;ll try my best to get back to you!
+        I&apos;m actively seeking new opportunities, and I welcome any inquiries. Feel free to reach
+        out to me via email, as my inbox is always open. Whether you have a question or want to
+        discuss a potential collaboration, I will make every effort to respond promptly.
       </p>
 
       <Button

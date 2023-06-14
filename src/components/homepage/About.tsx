@@ -12,15 +12,17 @@ const About = () => {
       <div className="flex flex-col items-center space-y-6 sm:space-y-10 lg:flex-row lg:space-y-0 lg:justify-between lg:space-x-10 xl:space-x-12 lg:items-start w-full">
         <div className="text-subtext0 space-y-4">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iste tempore odio
-            reprehenderit delectus dolores rerum! Omnis distinctio molestias, magnam repellendus
-            doloribus nihil illum qui et aliquam id praesentium suscipit! Lorem ipsum dolor
-            sit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Hi! I am Daniela Vornic and I am a dedicated frontend developer with a passion for
+            creating user interfaces. As a current student pursuing a Bachelor of Science in
+            Software Engineering, I bring a fresh perspective and a hunger for continuous learning
+            to every project I undertake. With over three years of experience in web development, I
+            have refined my skills in designing captivating websites and applications.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iste tempore odio
-            reprehenderit delectus dolores rerum! Omnis distinctio molestias, magnam repellendus
-            doloribus nihil illum qui et aliquam id praesentium suscipit! Lorem ipsum dolor sit.
+            I constantly stay abreast of the latest industry trends and emerging technologies, as I
+            believe in the power of continuous learning and growth. I am a firm believer in the
+            power of teamwork and collaboration, and I am always looking for opportunities to
+            collaborate with other developers and designers.
           </p>
           <p>Here are a few technologies I&apos;m working with:</p>
           <TechList />
