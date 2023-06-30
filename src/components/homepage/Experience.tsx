@@ -11,12 +11,12 @@ const jobTabs = [
     dates: "July 2021 - Present",
     title: "Web Developer",
     details: [
-      "Maintaining and optimizing all 6 websites of the media hub.",
-      "Collaborating closely with designers to implement new features and incorporate fresh designs.",
-      "Successfully built 5 websites with portfolio and e-commerce functionalities.",
-      "Implementing SEO best practices to improve search engine visibility and drive organic traffic.",
-      "Conducting regular website audits and performance optimization to ensure optimal user experience.",
-      "Troubleshooting and resolving frontend issues to enhance overall website functionality.",
+      "Maintain and optimize all 6 websites of the media hub.",
+      "Collaborated closely with designers to implement new features and incorporate fresh designs.",
+      "Built 5 websites with portfolio and e-commerce functionalities.",
+      "Implemented SEO best practices to improve search engine visibility and drive organic traffic.",
+      "Conducted regular website audits and performance optimization to ensure optimal user experience.",
+      "Troubleshooted and resolved frontend issues to enhance overall website functionality.",
     ],
   },
   {
@@ -25,12 +25,11 @@ const jobTabs = [
     dates: "May 2022 - May 2023",
     title: "Frontend Developer",
     details: [
-      "Collaborated with back-end developers and web designers to enhance usability and create seamless user experiences.",
       "Successfully built small and large-scale applications using frontend technologies, adhering to best practices and coding standards.",
       "Implemented new features and modules, enhancing the functionality and user engagement of web applications.",
+      "Collaborated with a 5-member front-end team, back-end developers, web designers and project managers to deliver projects on time.",
       "Actively participated in team discussions and brainstorming sessions to contribute ideas and strategies for improving product development processes.",
       "Assisted in website optimization and performance tuning, ensuring fast load times and efficient user interactions.",
-      "Collaborated with project managers to ensure timely and successful project delivery.",
       "Stayed abreast of emerging technologies, industry trends, and best practices to ensure the adoption of innovative solutions.",
     ],
   },
@@ -40,8 +39,8 @@ const jobTabs = [
     dates: "2016 - 2017",
     title: "Frontend Developer",
     details: [
-      "Created web applications and modules using frontend technologies.",
-      "Maintained WordPress e-commerce websites for various companies, such as SRL Pur-Rosalya.",
+      "Created web applications and modules using front-end technologies, including HTML5, CSS3, and jQuery.",
+      "Collaborated closely with local companies, such as SRL Pur-Rosalya, to maintain e-commerce WordPress websites.",
     ],
   },
 ];
