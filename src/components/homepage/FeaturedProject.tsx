@@ -5,7 +5,7 @@ interface Project {
   title: string;
   description: string;
   image: string;
-  github: string;
+  github?: string;
   link: string;
   tech: string[];
 }
@@ -49,7 +49,7 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
           >
             <h3 className="text-xl lg:text-2xl font-bold mb-6 lg:mb-10 lg:inline-block">{title}</h3>
           </a>
-          <p className="mb-10 lg:p-4 xl:p-6 lg:bg-[#28283e] lg:shadow-sm lg:hover:shadow-lg transition">
+          <p className="mb-10 lg:p-4 xl:p-6 lg:bg-[#28283e] lg:shadow-sm lg:hover:shadow-lg transition whitespace-pre-line">
             {description}
           </p>
 
@@ -70,15 +70,17 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
               "lg:justify-end": dir === "left",
             })}
           >
-            <a
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-lavender transition"
-              aria-label="GitHub Link"
-            >
-              <FiGithub className="text-xl" />
-            </a>
+            {github && (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-lavender transition"
+                aria-label="GitHub Link"
+              >
+                <FiGithub className="text-xl" />
+              </a>
+            )}
             <a
               href={link}
               target="_blank"
@@ -92,14 +94,14 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
         </div>
       </div>
       <a
-        href={"link"}
+        href={link}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={title}
-        className="cursor-pointer shadow-md lg:shadow-none group-hover:shadow-lg lg:hover:shadow-none absolute top-0 h-96 w-full z-0 lg:block lg:relative lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+        className="cursor-pointer shadow-md lg:shadow-none group-hover:shadow-lg lg:hover:shadow-none absolute top-[50%] -translate-y-[50%] h-80 md:h-96 w-full z-0 lg:block lg:relative lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
       >
         <div
-          className="bg-cover bg-center bg-no-repeat h-96 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl opacity-25 lg:opacity-100 featured-project-image transition"
+          className="bg-cover bg-center bg-no-repeat h-80 md:h-96 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl opacity-10 lg:opacity-100 featured-project-image transition"
           style={{ backgroundImage: `url(${image})` }}
         />
       </a>
