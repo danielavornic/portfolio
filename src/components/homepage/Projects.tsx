@@ -48,7 +48,7 @@ const Projects = () => {
     <section id="projects" className="mt-28 md:mt-32 lg:mt-40 xl:mt-52">
       <NumberedHeader number={2} heading="Projects" />
 
-      <div className="space-y-8 md:space-y-14 xl:space-y-20">
+      <div className="space-y-8 md:space-y-10 lg:space-y-16 xl:space-y-20">
         {projects.map((project, index) => (
           <FeaturedProject key={index} project={project} dir={index % 2 ? "right" : "left"} />
         ))}

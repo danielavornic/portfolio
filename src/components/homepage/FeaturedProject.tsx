@@ -21,7 +21,7 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
   return (
     <div
       className={cn(
-        "relative h-96 flex shadow-menu justify-between lg:shadow-none group",
+        "relative h-[460px] md:h-96 flex shadow-menu justify-between lg:shadow-none group",
         className,
         {
           "lg:justify-end": dir === "right",
@@ -54,12 +54,12 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
           </p>
 
           <ul
-            className={cn("flex flex-wrap space-x-4", {
+            className={cn("flex flex-wrap", {
               "lg:justify-end": dir === "left",
             })}
           >
             {tech.map((t, i) => (
-              <li key={i} className="text-sm font-mono">
+              <li key={i} className="text-sm font-mono mr-4">
                 {t}
               </li>
             ))}
@@ -98,10 +98,10 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
         target="_blank"
         rel="noopener noreferrer"
         aria-label={title}
-        className="cursor-pointer shadow-md lg:shadow-none group-hover:shadow-lg lg:hover:shadow-none absolute top-[50%] -translate-y-[50%] h-80 md:h-96 w-full z-0 lg:block lg:relative lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
+        className="cursor-pointer shadow-md lg:shadow-none group-hover:shadow-lg lg:hover:shadow-none absolute top-[50%] -translate-y-[50%] h-full md:h-96 w-full z-0 lg:block lg:relative lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
       >
         <div
-          className="bg-cover bg-center bg-no-repeat h-80 md:h-96 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl opacity-10 lg:opacity-100 featured-project-image transition"
+          className="bg-cover bg-center bg-no-repeat h-full md:h-96 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl opacity-10 lg:opacity-100 featured-project-image transition"
           style={{ backgroundImage: `url(${image})` }}
         />
       </a>
