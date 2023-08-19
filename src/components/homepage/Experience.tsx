@@ -35,7 +35,7 @@ const jobTabs = [
   },
   {
     employer: "Freelance",
-    employerLink: "https://vornic.vercel.com/",
+    employerLink: "https://danielavornic.com/",
     dates: "2016 - 2017",
     title: "Frontend Developer",
     details: [
