@@ -14,21 +14,24 @@ const projects = [
   },
   {
     title: "CAMA",
-    description: "A business website for Chisinau Academy of Media Arts, part of BRMG. It includes the necessary information about the academy, such as courses and mentors, along with an application form. A blog section is also included, which is updated via a content management system.",
+    description:
+      "A business website for Chisinau Academy of Media Arts, part of BRMG. It includes the necessary information about the academy, such as courses and mentors, along with an application form. A blog section is also included, which is updated via a content management system.",
     image: "/images/cama.webp",
-    link: "https://versusartist.com/",
+    link: "https://cama.md/",
     tech: ["Next.js", "TypeScript", "Google Scripts", "i18n", "Contentful"],
   },
   {
     title: "Versus Artist",
-    description: "A multilingual business website for the Versus Artist music label, part of BRMG. It features a custom-built music player and information regarding artists and producers.",
+    description:
+      "A multilingual business website for the Versus Artist music label, part of BRMG. It features a custom-built music player and information regarding artists and producers.",
     image: "/images/versusartist.webp",
     link: "https://versusartist.com/",
     tech: ["HTML", "SCSS", "jQuery"],
   },
   {
     title: "Romanian Wordle",
-    description: "A minimalist Romanian-language Wordle clone, inspired by the popular game. The app features a word generator, a word checker algorithm and a virtual keyboard.",
+    description:
+      "A minimalist Romanian-language Wordle clone, inspired by the popular game. The app features a word generator, a word checker algorithm and a virtual keyboard.",
     image: "images/wordle.webp",
     github: "https://github.com/danielavornic/wordle-ro",
     link: "https://wordle-ro.netlify.app/",
@@ -36,7 +39,8 @@ const projects = [
   },
   {
     title: "TopTrip",
-    description: "A web platform for planning trips, developed for a university course. It features routes search with map integration, tickets and hotels recommendations and user authentication.",
+    description:
+      "A web platform for planning trips, developed for a university course. It features routes search with map integration, tickets and hotels recommendations and user authentication.",
     image: "/images/toptrip.webp",
     link: "https://top-trip.vercel.app/",
     tech: ["React", "TypeScript", "Tailwind CSS", "mapbox", "Supabase"],
