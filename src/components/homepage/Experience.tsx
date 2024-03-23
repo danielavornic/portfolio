@@ -6,6 +6,29 @@ const NumberedHeader = dynamic(() => import("@/components/common/NumberedHeader"
 
 const jobTabs = [
   {
+    employer: "IXOBIT LTD",
+    dates: "September 2023 - March 2024",
+    title: "Front-end Developer",
+    details: [
+      "Built ecommerce websites and landing pages for international and local companies using front-end technologies, built-in CMSs and Shopify.",
+      "Implemented new features of older projects with React.js.",
+      "Collaborated with designers to implement new features and incorporate fresh designs.",
+    ],
+  },
+
+  {
+    employer: "EBS Integrator",
+    employerLink: "https://ebs-integrator.com/",
+    dates: "May 2022 - May 2023",
+    title: "Frontend Developer",
+    details: [
+      "Successfully built small and large-scale applications using frontend React.js and Next.js.",
+      "Implemented new features and modules, enhancing the functionality and user engagement of web applications.",
+      "Collaborated with a 5-member front-end team, back-end developers, web designers and project managers to deliver projects on time.",
+      "Assisted in website optimization and performance tuning, ensuring fast load times and efficient user interactions.",
+    ],
+  },
+  {
     employer: "BR Media Group",
     employerLink: "https://brmg.md/",
     dates: "July 2021 - Present",
@@ -20,23 +43,9 @@ const jobTabs = [
     ],
   },
   {
-    employer: "EBS Integrator",
-    employerLink: "https://ebs-integrator.com/",
-    dates: "May 2022 - May 2023",
-    title: "Frontend Developer",
-    details: [
-      "Successfully built small and large-scale applications using frontend technologies, adhering to best practices and coding standards.",
-      "Implemented new features and modules, enhancing the functionality and user engagement of web applications.",
-      "Collaborated with a 5-member front-end team, back-end developers, web designers and project managers to deliver projects on time.",
-      "Actively participated in team discussions and brainstorming sessions to contribute ideas and strategies for improving product development processes.",
-      "Assisted in website optimization and performance tuning, ensuring fast load times and efficient user interactions.",
-      "Stayed abreast of emerging technologies, industry trends, and best practices to ensure the adoption of innovative solutions.",
-    ],
-  },
-  {
     employer: "Freelance",
     employerLink: "https://danielavornic.com/",
-    dates: "2016 - 2017",
+    dates: "2018 - 2020",
     title: "Frontend Developer",
     details: [
       "Created web applications and modules using front-end technologies, including HTML5, CSS3, and jQuery.",

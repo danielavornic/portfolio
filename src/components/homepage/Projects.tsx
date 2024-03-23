@@ -5,6 +5,22 @@ const FeaturedProject = dynamic(() => import("@/components/homepage/FeaturedProj
 
 const projects = [
   {
+    title: "Versus Artist",
+    description:
+      "A multilingual business website for the Versus Artist music label, part of BRMG. It features information about the artists, producers, releases and merch store. Sanity CMS was used to manage the content, and the website is optimized for SEO.",
+    image: "/images/versus.webp",
+    link: "https://versusartist.com/",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS"],
+  },
+  {
+    title: "Elven Springs",
+    description:
+      "A showcase website for the upcoming products of Elven Springs, a brand that sells energy drinks. Using GSAP animations, I created a visually appealing platform that showcases the products and their benefits. The content is managed through the Shopify Storefront API.",
+    image: "/images/elven.webp",
+    link: "https://elven-springs.vercel.app/",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Shopify Storefront API", "GSAP"],
+  },
+  {
     title: "BR Equipment Rental",
     description:
       "A multilingual website for BR Rental, subsidiary of BR Media Group, which features an e-commerce product catalog. The platform includes essential functionalities such as a shopping cart and email integration. To facilitate seamless updates to the product catalog, I also built a dashboard using React and Firebase.",
@@ -13,37 +29,12 @@ const projects = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Google Scripts", "i18n"],
   },
   {
-    title: "CAMA",
+    title: "Fabella",
     description:
-      "A business website for Chisinau Academy of Media Arts, part of BRMG. It includes the necessary information about the academy, such as courses and mentors, along with an application form. A blog section is also included, which is updated via a content management system.",
-    image: "/images/cama.webp",
-    link: "https://cama.md/",
-    tech: ["Next.js", "TypeScript", "Google Scripts", "i18n", "Contentful"],
-  },
-  {
-    title: "Versus Artist",
-    description:
-      "A multilingual business website for the Versus Artist music label, part of BRMG. It features a custom-built music player and information regarding artists and producers.",
-    image: "/images/versusartist.webp",
-    link: "https://versusartist.com/",
-    tech: ["HTML", "SCSS", "jQuery"],
-  },
-  {
-    title: "Romanian Wordle",
-    description:
-      "A minimalist Romanian-language Wordle clone, inspired by the popular game. The app features a word generator, a word checker algorithm and a virtual keyboard.",
-    image: "images/wordle.webp",
-    github: "https://github.com/danielavornic/wordle-ro",
-    link: "https://wordle-ro.netlify.app/",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Vitest"],
-  },
-  {
-    title: "TopTrip",
-    description:
-      "A web platform for planning trips, developed for a university course. It features routes search with map integration, tickets and hotels recommendations and user authentication.",
-    image: "/images/toptrip.webp",
-    link: "https://top-trip.vercel.app/",
-    tech: ["React", "TypeScript", "Tailwind CSS", "mapbox", "Supabase"],
+      "An e-commerce website for Fabella, a skincare brand. The platform features a landing page, product catalog and shopping cart. As a freelance project, I worked closely with the client to ensure the website met their requirements and expectations.",
+    image: "/images/fabella.webp",
+    link: "https://fabella.md/",
+    tech: ["WordPress", "Elementor", "CSS"],
   },
 ];
 
