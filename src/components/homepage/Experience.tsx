@@ -1,17 +1,27 @@
-import { useState } from "react";
-import dynamic from "next/dynamic";
 import cn from "classnames";
+import dynamic from "next/dynamic";
+import { useState } from "react";
 
 const NumberedHeader = dynamic(() => import("@/components/common/NumberedHeader"));
 
 const jobTabs = [
+  {
+    employer: "Lixium",
+    dates: "May 2024 - Present",
+    employerLink: "https://lixium.dev",
+    title: "Frontend Developer",
+    details: [
+      "Currently developing an ecosystem of web applications using Next.js and Tailwind CSS in the logistics and trucks industry.",
+      "Collaborated with frontdevelopers and project managers to meet the client's deadlines and needs on time.",
+    ],
+  },
   {
     employer: "IXOBIT LTD",
     dates: "September 2023 - March 2024",
     title: "Front-end Developer",
     details: [
       "Built ecommerce websites and landing pages for international and local companies using front-end technologies, built-in CMSs and Shopify.",
-      "Implemented new features of older projects with React.js.",
+      "Implemented new features for older projects with React.js.",
       "Collaborated with designers to implement new features and incorporate fresh designs.",
     ],
   },
