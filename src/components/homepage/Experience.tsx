@@ -12,7 +12,7 @@ const jobTabs = [
     title: "Frontend Developer",
     details: [
       "Currently developing an ecosystem of web applications using Next.js and Tailwind CSS in the logistics and trucks industry.",
-      "Collaborated with frontdevelopers and project managers to meet the client's deadlines and needs on time.",
+      "Collaborating closely project managers and developers to come up with the best solutions and to meet the client's deadlines and needs on time.",
     ],
   },
   {
