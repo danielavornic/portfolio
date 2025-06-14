@@ -11,8 +11,19 @@ const jobTabs = [
     employerLink: "https://lixium.dev",
     title: "Frontend Developer",
     details: [
-      "Currently developing an ecosystem of web applications using Next.js and Tailwind CSS in the logistics and trucks industry.",
-      "Collaborating closely project managers and developers to come up with the best solutions and to meet the client's deadlines and needs on time.",
+      "Currently developing an ecosystem of Next.js web platforms, including interactive dashboards and workflows, for logistics and truck repair operations.",
+      "Working closely with project managers and developers to design the most fitting and efficient solutions for the client's needs.",
+    ],
+  },
+  {
+    employer: "BR Media Group",
+    employerLink: "https://brmg.md/",
+    dates: "July 2021 - Present",
+    title: "Web Developer",
+    details: [
+      "Maintaining all 5 websites of the media hub. This covers portfolio sites with headless CMS libraries in Next.js, e-commerce platforms, inventory dashboards, and landing pages.",
+      "Implemented SEO best practices to improve search engine visibility and drive organic traffic.",
+      "Collaborated closely with designers to implement new features and incorporate fresh designs.",
     ],
   },
   {
@@ -22,7 +33,6 @@ const jobTabs = [
     details: [
       "Built ecommerce websites and landing pages for international and local companies using front-end technologies, built-in CMSs and Shopify.",
       "Implemented new features for older projects with React.js.",
-      "Collaborated with designers to implement new features and incorporate fresh designs.",
     ],
   },
 
@@ -32,26 +42,13 @@ const jobTabs = [
     dates: "May 2022 - May 2023",
     title: "Frontend Developer",
     details: [
-      "Successfully built small and large-scale applications using frontend React.js and Next.js.",
-      "Implemented new features and modules, enhancing the functionality and user engagement of web applications.",
+      "Contributed to the development of 2 small and 3 large-scale applications, including CMS and CRM systems.",
+      "Contributed to the team's internal React UI library using Storybook.",
+      "Assisted in website optimization and tuning.",
       "Collaborated with a 5-member front-end team, back-end developers, web designers and project managers to deliver projects on time.",
-      "Assisted in website optimization and performance tuning, ensuring fast load times and efficient user interactions.",
     ],
   },
-  {
-    employer: "BR Media Group",
-    employerLink: "https://brmg.md/",
-    dates: "July 2021 - Present",
-    title: "Web Developer",
-    details: [
-      "Maintain and optimize all 6 websites of the media hub.",
-      "Collaborated closely with designers to implement new features and incorporate fresh designs.",
-      "Built 5 websites with portfolio and e-commerce functionalities.",
-      "Implemented SEO best practices to improve search engine visibility and drive organic traffic.",
-      "Conducted regular website audits and performance optimization to ensure optimal user experience.",
-      "Troubleshooted and resolved frontend issues to enhance overall website functionality.",
-    ],
-  },
+
   {
     employer: "Freelance",
     employerLink: "https://danielavornic.com/",

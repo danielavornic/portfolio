@@ -14,7 +14,7 @@ const Contact = () => {
       <p className="my-10 text-subtext0">
         I&apos;m actively seeking new opportunities, and I welcome any inquiries. Feel free to reach
         out to me via email, as my inbox is always open. Whether you have a question or want to
-        discuss a potential collaboration, I will make every effort to respond promptly.
+        discuss a potential collaboration, I will make every effort to respond shortly.
       </p>
 
       <Button
