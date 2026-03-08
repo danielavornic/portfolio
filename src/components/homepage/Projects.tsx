@@ -5,9 +5,17 @@ const FeaturedProject = dynamic(() => import("@/components/homepage/FeaturedProj
 
 const projects = [
   {
+    title: "NIM Wear",
+    description:
+      "The merch store for Născut în Moldova music festival. The website features a product catalog, wishlist, shopping cart, allowing users to purchase merchandise. It integrates with the Shopify Storefront API, VictoriaBank payment gateway, and NovaPost as the shipping provider.",
+    image: "/images/nimwear.webp",
+    link: "https://shop.nim.md/",
+    tech: ["Next.js", "TypeScript", "Shopify Storefront API", "Tailwind CSS"],
+  },
+  {
     title: "Născut în Moldova",
     description:
-      "The landing page for the upcoming Născut în Moldova music festival. The website consists of page with the festival's information, from lineup to tickets. I've been constantly updating the website to ensure the marketing team has the latest information. Supabase was used for a promotional campaign where people could register.",
+      "The landing page for the Născut în Moldova music festival. The website consists of page with the festival's information, from lineup to tickets, enabling users to buy the tickets via the afisha.md API. I've been constantly updating the website to ensure the marketing team has the latest information. Supabase was used for a promotional campaign where people could register.",
     image: "/images/nim.webp",
     link: "https://nim.md/",
     tech: ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS", "Supabase"],
@@ -15,7 +23,7 @@ const projects = [
   {
     title: "BR Films",
     description:
-      "A portfolio website for BR Films, a film production company part of BRMG. The website features a landing page with the company's work. It uses Sanity CMS to manage the content, and GSAP for animations.",
+      "A portfolio website for BR Films, a film production company part of BRMG. The website features a landing page with the company's work. It uses Sanity CMS to manage the content, bunny.net for video storage & streaming, and GSAP for animations.",
     image: "/images/brfilms.webp",
     link: "https://brfilms.md/",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS", "GSAP"],
@@ -27,14 +35,6 @@ const projects = [
     image: "/images/versus.webp",
     link: "https://versusartist.com/",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Sanity CMS"],
-  },
-  {
-    title: "Elven Springs",
-    description:
-      "A showcase website for the upcoming products of Elven Springs, a brand that sells energy drinks. Using GSAP animations, I created a visually appealing platform that showcases the products and their benefits. The content is managed through the Shopify Storefront API.",
-    image: "/images/elven.webp",
-    link: "https://elven-springs.vercel.app/",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Shopify Storefront API", "GSAP"],
   },
   {
     title: "BRO Rent",

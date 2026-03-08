@@ -14,8 +14,7 @@ const Hero = () => {
       </h2>
 
       <p className="text-subtext0 mt-10 md:mt-12 max-w-md text-justify">
-        I&apos;m a frontend developer based in Chișinău, Moldova. I enjoy creating user interfaces
-        that are both functional and easy to use.
+        I&apos;m a full-stack engineer based in Chișinău, Moldova.
       </p>
 
       <Button as="scrollLink" href="about" className="mt-12 md:mt-14 w-fit" aria-label="View more">

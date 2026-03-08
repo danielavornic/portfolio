@@ -12,15 +12,13 @@ const About = () => {
       <div className="flex flex-col items-center space-y-6 sm:space-y-10 lg:flex-row lg:space-y-0 lg:justify-between lg:space-x-10 xl:space-x-12 lg:items-start w-full">
         <div className="text-subtext0 space-y-4">
           <p>
-            I&apos;m in my final year of Software Engineering, splitting my time between classes and
-            development work. The past three years have been a mix of personal projects,
-            freelancing, and working with local companies, each one teaching me something new.
+            I&apos;m in my final year of Software Engineering, currently building an archaeological
+            cadastre platform alongside development work. The past several years have been a mix of
+            personal projects, freelancing, and part-time roles, mostly building things for the web.
           </p>
           <p>
-            While I enjoy coding on my own, my best work and the most effective learning happens
-            when working around with other developers and designers. There&apos;s always a new
-            problem to solve or a better way to build something, and that&apos;s what keeps me
-            engaged.
+            Outside of work, I enjoy tinkering while homelabbing, self-hosting, and going down Linux
+            rabbit holes. There&apos;s always something to learn, break and fix.
           </p>
           <p>Here are a few technologies I&apos;m currently working with:</p>
           <TechList />

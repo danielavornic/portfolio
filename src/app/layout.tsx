@@ -13,9 +13,9 @@ const source_code_pro = Source_Code_Pro({
 });
 
 export const metadata = {
-  title: "Daniela Vornic | Frontend Developer",
+  title: "Daniela Vornic | Full-stack Engineer",
   description:
-    "Personal website of Daniela Vornic, a frontend developer based in Chișinău, Moldova.",
+    "Personal website of Daniela Vornic, a full-stack engineer based in Chișinău, Moldova.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

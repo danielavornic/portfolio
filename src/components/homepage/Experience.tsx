@@ -7,23 +7,12 @@ const NumberedHeader = dynamic(() => import("@/components/common/NumberedHeader"
 const jobTabs = [
   {
     employer: "Lixium",
-    dates: "May 2024 - Present",
+    dates: "May 2024 - October 2025",
     employerLink: "https://lixium.dev",
-    title: "Frontend Developer",
+    title: "Front-end Developer",
     details: [
-      "Currently developing an ecosystem of Next.js web platforms, including interactive dashboards and workflows, for logistics and truck repair operations.",
-      "Working closely with project managers and developers to design the most fitting and efficient solutions for the client's needs.",
-    ],
-  },
-  {
-    employer: "BR Media Group",
-    employerLink: "https://brmg.md/",
-    dates: "July 2021 - Present",
-    title: "Web Developer",
-    details: [
-      "Maintaining all 5 websites of the media hub. This covers portfolio sites with headless CMS libraries in Next.js, e-commerce platforms, inventory dashboards, and landing pages.",
-      "Implemented SEO best practices to improve search engine visibility and drive organic traffic.",
-      "Collaborated closely with designers to implement new features and incorporate fresh designs.",
+      "Owned front-end of 2 production B2B SaaS platforms for logistics fleet management and truck repair operations serving multi-shop operators. Shaped architecture decisions and drove refactoring efforts.",
+      "Designed and built a dental tourism platform in Next.js (patient-facing and doctor-facing) with interactive components.",
     ],
   },
   {
@@ -40,12 +29,22 @@ const jobTabs = [
     employer: "EBS Integrator",
     employerLink: "https://ebs-integrator.com/",
     dates: "May 2022 - May 2023",
-    title: "Frontend Developer",
+    title: "Front-end Developer",
     details: [
-      "Contributed to the development of 2 small and 3 large-scale applications, including CMS and CRM systems.",
-      "Contributed to the team's internal React UI library using Storybook.",
-      "Assisted in website optimization and tuning.",
-      "Collaborated with a 5-member front-end team, back-end developers, web designers and project managers to deliver projects on time.",
+      "Developed and shipped features across 4 production applications, including large-scale CMS and CRM systems, focusing on improving user experience and accessibility.",
+      "Audited and improved Lighthouse performance and SEO scores across marketing pages.",
+      "Built reusable Storybook components for the internal React UI library shared across 2 production applications.",
+    ],
+  },
+  {
+    employer: "BR Media Group",
+    employerLink: "https://brmg.md/",
+    dates: "Jun 2021 - Present",
+    title: "Freelance Web Developer",
+    details: [
+      "Designed and managed over 5 web properties for a Moldovan media group, selecting technologies and infrastructure based on project requirements.",
+      "Integrated local payment gateways and shipping providers into 2 e-commerce platforms.",
+      "Drove 140k impressions and 48.6k clicks on the Născut în Moldova festival site via an SEO-optimized Next.js build.",
     ],
   },
 
@@ -53,7 +52,7 @@ const jobTabs = [
     employer: "Freelance",
     employerLink: "https://danielavornic.com/",
     dates: "2018 - 2020",
-    title: "Frontend Developer",
+    title: "Front-end Developer",
     details: [
       "Created web applications and modules using front-end technologies, including HTML5, CSS3, and jQuery.",
       "Collaborated closely with local companies, such as SRL Pur-Rosalya, to maintain e-commerce WordPress websites.",

@@ -1,15 +1,17 @@
 const skills = [
   "Next.js",
   "React.js",
+  "Nest.js",
   "TypeScript",
-  "Redux",
+  "PostgreSQL",
+  "Drizzle ORM",
   "TanStack Query",
   "Tailwind CSS",
-  "SCSS",
-  "Wordpress",
+  "Shopify",
+  "Docker",
 ];
-const firstColumnSkills = skills.slice(0, 4);
-const secondColumnSkills = skills.slice(4);
+const firstColumnSkills = skills.slice(0, 5);
+const secondColumnSkills = skills.slice(5);
 
 const TechList = () => {
   return (
