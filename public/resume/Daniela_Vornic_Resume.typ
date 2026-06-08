@@ -7,7 +7,7 @@
 #let email = "contact@danielavornic.com"
 #let github = "github.com/danielavornic"
 #let linkedin = "linkedin.com/in/danielavornic"
-#let phone = "+373 68576855"
+#let phone = "+373 68 57 68 55"
 #let personal-site = "danielavornic.com"
 
 #show: resume.with(
@@ -38,8 +38,8 @@
 == Summary
 
 Full-stack engineer with 4 years of experience building web platforms.
-Primarly focused on front-end development, I also have experience in system
-design, back-end development, databases, and deployment. Worked on B2B SaaS products and custom software projects.
+Primarily focused on front-end development, I also have hands-on experience in system
+design, back-end development, databases, and deployment across B2B SaaS products and custom software projects.
 
 /*
 * Lines that start with == are formatted into section headings
@@ -77,10 +77,9 @@ design, back-end development, databases, and deployment. Worked on B2B SaaS prod
   company: "Self-employed",
   dates: dates-helper(start-date: "Oct 2025", end-date: "Present"),
 )
-- Architected and delivered a geospatial web platform used by the National Archaeological Agency of Moldova to digitize and manage a register of 11,000+ archaeological sites
+- Architected and delivered a geospatial web platform used by the National Archaeological Agency of Moldova to manage a register of 11,000+ archaeological sites
 // - Served as the sole developer, responsible for requirements gathering, system design, implementation, deployment, and maintenance using React, NestJS, PostGIS, and GeoServer
-- Leading front-end development of an ERP/LMS platform for impact Academies,
-  shaping user workflows and contributing to deployment processes
+- Leading front-end development of an ERP/LMS platform for impact Academies
 
 #work(
   title: "Front-end Developer",
@@ -89,7 +88,8 @@ design, back-end development, databases, and deployment. Worked on B2B SaaS prod
   dates: dates-helper(start-date: "May 2024", end-date: "Oct 2025"),
 )
 - Owned front-end of 2 production B2B SaaS platforms for logistics fleet management and truck
-  repair operations which serve multi-shop operators. Shaped architecture decisions and drove refactoring efforts.
+  repair operations which serve multi-shop operators
+- Shaped front-end architecture decisions and drove refactoring to improve maintainability across production codebases
 - Designed and built a dental tourism platform in Next.js (patient-facing and doctor-facing)
 
 // #work(
@@ -121,7 +121,8 @@ design, back-end development, databases, and deployment. Worked on B2B SaaS prod
   company: "BR Media Group",
   dates: dates-helper(start-date: "Jun 2021", end-date: "Present"),
 )
--  Served as the primary technical owner of 7+ web properties for a Moldovan media group, including technology selection, hosting, and third-party integrations
+- Served as the primary technical owner of 7+ web properties (portfolio and
+  landing pages, e-commerce, catalogs), including technology selection, hosting, and third-party integrations
 - Integrated Shopify, local payment gateways, shipping providers, and ticketing systems into 2 e-commerce platforms
 // - Generated 140k impressions and 49k clicks for the Născut în Moldova festival website through an SEO-optimized React implementation
   
@@ -158,8 +159,7 @@ design, back-end development, databases, and deployment. Worked on B2B SaaS prod
   dates: dates-helper(start-date: "Mar 2023", end-date: "Present"),
 )
 
-- Building a custom learning platform for the organization's courses as the lead
-  front-end developer and DevOps engineer
+- Leading development of a custom learning platform for the organization as front-end lead and DevOps engineer
 - Mentored new members through a 5-month ML/data science internship 
 - Contributed to the events coordinated by the organization, including a
   university hackathon
