@@ -1,12 +1,12 @@
 const skills = [
-  "Next.js",
-  "React.js",
-  "Nest.js",
   "TypeScript",
-  "PostgreSQL",
-  "Drizzle ORM",
+  "React.js",
+  "Next.js",
   "TanStack Query",
   "Tailwind CSS",
+  "NestJS",
+  "PostgreSQL",
+  "Drizzle ORM",
   "Shopify",
   "Docker",
 ];

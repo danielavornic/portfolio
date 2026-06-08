@@ -5,6 +5,14 @@ const FeaturedProject = dynamic(() => import("@/components/homepage/FeaturedProj
 
 const projects = [
   {
+    title: "Archaeological Cadastre",
+    description:
+      "The digital national archaeological registry. The platform allows public users to search the archaeological sites, while administrators manage the data. Built with interoperability in mind, the system uses GeoServer to expose geospatial data via WMS/WFS services, and consumes data regarding administrative units.",
+    image: "/images/cadastru-arheologic.webp",
+    link: "https://cadastru.ana.md/",
+    tech: ["NestJS", "PostgeSQL + PostGIS", "React", "GeoServer", "SeaweedFS"],
+  },
+  {
     title: "NIM Wear",
     description:
       "The merch store for Născut în Moldova music festival. The website features a product catalog, wishlist, shopping cart, allowing users to purchase merchandise. It integrates with the Shopify Storefront API, VictoriaBank payment gateway, and NovaPost as the shipping provider.",

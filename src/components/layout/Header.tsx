@@ -73,7 +73,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }: HeaderProps) => {
           <Button
             size="sm"
             as="a"
-            href="/Daniela_Vornic_Resume.pdf"
+            href="/resume/Daniela_Vornic_Resume.pdf"
             target="_blank"
             className="hidden md:flex"
           >
