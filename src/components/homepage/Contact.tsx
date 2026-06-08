@@ -19,7 +19,7 @@ const Contact = () => {
 
       <Button
         as="a"
-        href="mailto:daniela.vornic@gmail.com"
+        href="mailto:contact@danielavornic.com"
         target="_blank"
         className="w-fit block mx-auto"
       >
