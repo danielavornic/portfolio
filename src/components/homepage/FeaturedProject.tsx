@@ -101,7 +101,7 @@ const FeaturedProject = ({ project, dir = "left", className, ...props }: Project
         className="cursor-pointer shadow-md lg:shadow-none group-hover:shadow-lg lg:hover:shadow-none absolute top-[50%] -translate-y-[50%] h-full md:h-96 w-full z-0 lg:block lg:relative lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
       >
         <div
-          className="bg-cover bg-center bg-no-repeat h-full md:h-96 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl opacity-10 lg:opacity-100 featured-project-image transition"
+          className="bg-cover bg-top bg-no-repeat h-full md:h-96 w-full lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl opacity-10 lg:opacity-100 featured-project-image transition"
           style={{ backgroundImage: `url(${image})` }}
         />
       </a>

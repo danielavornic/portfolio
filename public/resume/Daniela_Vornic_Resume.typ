@@ -79,7 +79,7 @@ design, back-end development, databases, and deployment. Worked on B2B SaaS prod
 )
 - Architected and delivered a geospatial web platform used by the National Archaeological Agency of Moldova to digitize and manage a register of 11,000+ archaeological sites
 // - Served as the sole developer, responsible for requirements gathering, system design, implementation, deployment, and maintenance using React, NestJS, PostGIS, and GeoServer
-- Leading front-end development of an ERP/LMS platform for Impact Academies,
+- Leading front-end development of an ERP/LMS platform for impact Academies,
   shaping user workflows and contributing to deployment processes
 
 #work(

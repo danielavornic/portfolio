@@ -6,6 +6,17 @@ const NumberedHeader = dynamic(() => import("@/components/common/NumberedHeader"
 
 const jobTabs = [
   {
+    employer: "Self-employed",
+    employerLink: "https://danielavornic.com/",
+    dates: "October 2025 - Present",
+    title: "Freelance Full-stack Engineer",
+    details: [
+      "Architected and delivered a geospatial web platform used by the National Archaeological Agency of Moldova to digitize and manage a register of 11,000+ archaeological sites.",
+      "Served as the sole developer, responsible for requirements gathering, system design, implementation, deployment, and maintenance using React, NestJS, PostGIS, and GeoServer.",
+      "Leading front-end development of an ERP/LMS platform for impact Academies, shaping user workflows and contributing to deployment processes.",
+    ],
+  },
+  {
     employer: "Lixium",
     dates: "May 2024 - October 2025",
     employerLink: "https://lixium.dev",
@@ -39,20 +50,20 @@ const jobTabs = [
   {
     employer: "BR Media Group",
     employerLink: "https://brmg.md/",
-    dates: "Jun 2021 - Present",
-    title: "Freelance Web Developer",
+    dates: "June 2021 - Present",
+    title: "Freelance Full-stack Engineer",
     details: [
-      "Designed and managed over 5 web properties for a Moldovan media group, selecting technologies and infrastructure based on project requirements.",
-      "Integrated local payment gateways and shipping providers into 2 e-commerce platforms.",
+      "Serving as the primary technical owner of 7+ web properties, including technology selection, hosting, and third-party integrations.",
+      "Integrated Shopify, local payment gateways, shipping providers, and ticketing systems into 2 e-commerce platforms.",
       "Drove 140k impressions and 48.6k clicks on the Născut în Moldova festival site via an SEO-optimized Next.js build.",
     ],
   },
 
   {
-    employer: "Freelance",
+    employer: "Independent Clients",
     employerLink: "https://danielavornic.com/",
     dates: "2018 - 2020",
-    title: "Front-end Developer",
+    title: "Freelance Web Developer",
     details: [
       "Created web applications and modules using front-end technologies, including HTML5, CSS3, and jQuery.",
       "Collaborated closely with local companies, such as SRL Pur-Rosalya, to maintain e-commerce WordPress websites.",
