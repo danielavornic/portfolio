@@ -1,8 +1,8 @@
 import "./globals.scss";
-import { Inter, Source_Code_Pro } from "next/font/google";
+import { Onest, Source_Code_Pro } from "next/font/google";
 import cn from "classnames";
 
-const inter = Inter({
+const onest = Onest({
   subsets: ["latin"],
   display: "swap",
 });
@@ -10,6 +10,7 @@ const inter = Inter({
 const source_code_pro = Source_Code_Pro({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-mono",
 });
 
 export const metadata = {
@@ -21,7 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "mocha bg-base")}>{children}</body>
+      <body className={cn(onest.className, source_code_pro.variable, "mocha bg-base")}>
+        {children}
+      </body>
     </html>
   );
 }

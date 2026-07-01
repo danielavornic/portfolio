@@ -7,8 +7,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Inter", "sans-serif"],
-      mono: ["Source Code Pro", "monospace"],
+      sans: ["Onest", "sans-serif"],
+      mono: ["var(--font-mono)", "monospace"],
     },
     container: {
       padding: {
