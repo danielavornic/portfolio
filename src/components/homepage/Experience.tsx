@@ -7,7 +7,6 @@ const NumberedHeader = dynamic(() => import("@/components/common/NumberedHeader"
 const jobTabs = [
   {
     employer: "Self-employed",
-    employerLink: "https://danielavornic.com/",
     dates: "October 2025 - Present",
     title: "Freelance Full-stack Engineer",
     details: [
@@ -19,7 +18,6 @@ const jobTabs = [
   {
     employer: "Lixium",
     dates: "May 2024 - October 2025",
-    employerLink: "https://lixium.dev",
     title: "Front-end Developer",
     details: [
       "Owned front-end of 2 production B2B SaaS platforms for logistics fleet management and truck repair operations serving multi-shop operators. Shaped architecture decisions and drove refactoring efforts.",
@@ -61,7 +59,6 @@ const jobTabs = [
 
   {
     employer: "Independent Clients",
-    employerLink: "https://danielavornic.com/",
     dates: "2018 - 2020",
     title: "Freelance Web Developer",
     details: [
@@ -104,13 +101,17 @@ const Experience = () => {
           <div className="px-6 py-4 md:py-8 lg:px-0 lg:py-0">
             <h3 className="text-lg sm:text-xl font-semibold mb-2 space-x-2">
               <span className="text-text">{title}</span>
-              <a
-                className="text-lavender hover:underline hover:underline-offset-3 transition"
-                href={employerLink}
-                target="_blank"
-              >
-                @ {employer}
-              </a>
+              {employerLink ? (
+                <a
+                  className="text-lavender hover:underline hover:underline-offset-3 transition"
+                  href={employerLink}
+                  target="_blank"
+                >
+                  @ {employer}
+                </a>
+              ) : (
+                <span className="text-lavender">@ {employer}</span>
+              )}
             </h3>
             <p className="text-subtext0 font-mono mb-6 text-sm">{dates}</p>
             <ul className="list-disc marker:text-lavender list-outside">
