@@ -37,9 +37,9 @@
 
 == Summary
 
-Full-stack engineer with 4 years of experience building web platforms.
-Primarily focused on front-end development, I also have hands-on experience in system
-design, back-end development, databases, and deployment across B2B SaaS products and custom software projects.
+Full-stack engineer with 4 years of experience building web platforms end-to-end,
+from requirements to deployment. Front-end is my area of depth, complemented by hands-on experience in system
+design, back-end development, and databases across B2B SaaS products and custom software projects.
 
 /*
 * Lines that start with == are formatted into section headings
@@ -60,13 +60,13 @@ design, back-end development, databases, and deployment across B2B SaaS products
 #edu(
   institution: "Technical University of Moldova",
   location: "Chișinău, Moldova",
-  dates: dates-helper(start-date: "Sep 2022", end-date: "Expected July 2026"),
+  dates: dates-helper(start-date: "Sep 2022", end-date: "Jul 2026"),
   degree: "Bachelor of Science, English-taught Honours Programme in Software Engineering",
 
   // Uncomment the line below if you want edu formatting to be consistent with everything else
   consistent: true
 )
-- Rector's List (Top 1% of University)
+- Rector's List (Top 1%) | First-Class Honours, GPA 9.78/10 | Thesis: 10/10
 - Relevant Coursework: Web Programming, Distributed Systems, Databases, Requirements Engineering
 
 == Work Experience
