@@ -12,7 +12,7 @@ const About = () => {
       <div className="flex flex-col items-center space-y-6 sm:space-y-10 lg:flex-row lg:space-y-0 lg:justify-between lg:space-x-10 xl:space-x-12 lg:items-start w-full">
         <div className="text-subtext0 space-y-4">
           <p>
-            I&apos;m in my final year of Software Engineering, currently building web products
+            I recently graduated in Software Engineering, currently building web products
             independently for clients and organizations. The past several years have been a mix of
             part-time roles, freelancing, and personal projects, also mostly around the web.
           </p>
